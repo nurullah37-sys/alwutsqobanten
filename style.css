@@ -45,3 +45,41 @@ footer {
     text-align: center;
     padding: 10px;
 }
+/* Styling Buku Tamu */
+.buku-tamu {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.buku-tamu form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.buku-tamu input, 
+.buku-tamu textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.pesan-item {
+    background-color: #f8fafc;
+    border-left: 4px solid #2563eb;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.pesan-item strong {
+    color: #1e3a8a;
+    display: block;
+    margin-bottom: 5px;
+}
