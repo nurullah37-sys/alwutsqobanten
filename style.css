@@ -1,85 +1,102 @@
-/* Atur Tampilan Umum */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #333;
 }
-
-/* Bagian Atas / Header */
 header {
-    background-color: #1e3a8a;
-    color: white;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #0059b3;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
-
-header a {
-    color: white;
-    text-decoration: none;
-    margin-left: 15px;
+.logo {
+  width: 90px;
+  height: auto;
+  border-radius: 50%;
 }
-
-/* Banner Utama */
+nav {
+  background-color: #003d80;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: block;
+}
+nav a:hover, .aktif {
+  background-color: #002b5e;
+}
 .hero {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #ffffff;
+  position: relative;
+  text-align: center;
 }
-
+.hero img {
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+.konten {
+  padding: 20px;
+}
+.konten h2 {
+  color: #004d99;
+}
+.konten p {
+  line-height: 1.6;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+th {
+  background-color: #004d99;
+  color: white;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  gap: 10px;
+}
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 button {
-    background-color: #2563eb;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #004d99;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
 }
-
-/* Bagian Bawah */
+button:hover {
+  background-color: #003366;
+}
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-/* Styling Buku Tamu */
-.buku-tamu {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.buku-tamu form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-bottom: 20px;
-}
-
-.buku-tamu input, 
-.buku-tamu textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.pesan-item {
-    background-color: #f8fafc;
-    border-left: 4px solid #2563eb;
-    padding: 10px 15px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-}
-
-.pesan-item strong {
-    color: #1e3a8a;
-    display: block;
-    margin-bottom: 5px;
+  background-color: #004d99;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
 }
